@@ -37,7 +37,7 @@ export const navLinks = routeConfig.map(({ route, path }) => (
     to={path}
     onClick={() => scrollToTop()}
     className={({ isActive }) =>
-      `hover:text-primary px-2 h-[300px] ${
+      `hover:text-primary px-2 ${
         isActive ? "text-secondary font-bold" : ""
       }`
     }
