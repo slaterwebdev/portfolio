@@ -1,3 +1,11 @@
+/* IMPORTED FONTS:
+ * Playfair Display - Weights: 400 to 900 (Regular to Bold), supports italic styles.
+ * Barlow Semi Condensed - Weights: 100 (Thin) to 900 (Black), supports regular and italic styles.
+ * Permanent Marker - Single weight (Regular).
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Barlow+Semi+Condensed:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
