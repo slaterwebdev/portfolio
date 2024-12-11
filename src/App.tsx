@@ -7,7 +7,13 @@ import logo from "@/assets/logo.png";
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="flex flex-col justify-center min-h-screen">
+            Loading...
+          </div>
+        }
+      >
         <div className="flex items-center flex-col overflow-x-hidden px-4">
           <Navbar navLinks={navLinks} title="ADAM SLATER" logo={logo} />
           <Routes>{routes}</Routes>
