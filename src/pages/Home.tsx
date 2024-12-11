@@ -10,7 +10,6 @@ const Home = () => (
     }}
     image={profilePic}
   >
-    TEST
   </PageTemplate>
 );
 

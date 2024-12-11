@@ -2,14 +2,14 @@ import { getIcon } from "@/utils/iconMapper";
 
 //GENERAL
 export const linkedinURL = "https://www.linkedin.com/in/adam-slater-web-dev/";
-export const githubURL = "https://github.com/slaterwebdev"
-export const portfolioRepoURL = "https://github.com/slaterwebdev/"
+export const githubURL = "https://github.com/slaterwebdev";
+export const portfolioRepoURL = "https://github.com/slaterwebdev/portfolio";
 
 // HOME PAGE
 export const contactLinks: Array<{
-  href: string, 
-  label: string, 
-  icon: JSX.Element
+  href: string;
+  label: string;
+  icon: JSX.Element;
 }> = [
   {
     href: "mailto:adamslater1996@outlook.com",

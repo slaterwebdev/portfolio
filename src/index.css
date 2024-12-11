@@ -17,3 +17,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.circle-backdrop {
+  height: 1000px;
+  width: 1000px;
+}
+
+@media (max-width: 1024px) {
+  .circle-backdrop {
+    height: 800px;
+    width: 800px;
+  }
+}
+
+@media (max-width: 640px) {
+  .circle-backdrop {
+    height: 700px;
+    width: 700px;
+  }
+}
