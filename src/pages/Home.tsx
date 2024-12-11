@@ -1,6 +1,6 @@
-import { PageTemplate } from "@/components/layout/PageTemplate";
+import { ParallaxImage, Section, PageTemplate } from "@/components";
 import homeHero from "@/assets/heros/homeHero.png";
-import { Section } from "@/components";
+import parallaxImageUrl from "@/assets/parallax-test.jpg";
 
 const Home = () => (
   <PageTemplate
@@ -34,15 +34,16 @@ const Home = () => (
         user-focused digital experiences that deliver measurable results.
       </p>
       <p>
-        I've contributed to greenfield projects, legacy apps for
-        e-commerce leaders like Victorian Plumbing, and even CMS-driven websites for
+        I've contributed to greenfield projects, legacy apps for e-commerce
+        leaders like Victorian Plumbing, and even CMS-driven websites for
         high-profile insurance clients such as Arnold Clark, DARWIN, and
-        Triumph. Expansion into full-stack development with Node.js
-        has equipped me to handle every angle of the development process. I'm
-        eager to bring these new expertise to whats next and help deliver
-        innovative, tailored and scalable solutions.
+        Triumph. Expansion into full-stack development with Node.js has equipped
+        me to handle every angle of the development process. I'm eager to bring
+        these new expertise to whats next and help deliver innovative, tailored
+        and scalable solutions.
       </p>
     </Section>
+    <ParallaxImage imageUrl={parallaxImageUrl} />
   </PageTemplate>
 );
 

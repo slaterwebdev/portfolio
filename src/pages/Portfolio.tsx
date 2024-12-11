@@ -1,6 +1,5 @@
-import { PageTemplate } from "@/components";
+import { PageTemplate, Section } from "@/components";
 import portfolioHero from "@/assets/heros/portfolioHero.jpg";
-import { Section } from "@/components";
 
 const Portfolio = () => (
   <PageTemplate

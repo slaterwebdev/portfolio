@@ -1,5 +1,5 @@
 import { NavLink, Route } from "react-router-dom";
-import { scrollToTop } from "./utilities";
+import { scrollToTop } from "@/utils/utilities";
 import { lazy } from "react";
 
 type RouteConfig = {

@@ -1,6 +1,5 @@
-import { PageTemplate } from "@/components";
+import { PageTemplate, Section } from "@/components";
 import contactHero from "@/assets/heros/contactHero.jpg";
-import { Section } from "@/components";
 
 const Contact = () => (
   <PageTemplate
