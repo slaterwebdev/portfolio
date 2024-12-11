@@ -1,5 +1,5 @@
 import { PageTemplate } from "@/components/layout/PageTemplate";
-import profilePic from "@/assets/heros/profile.png";
+import homeHero from "@/assets/heros/homeHero.png";
 
 const Home = () => (
   <PageTemplate
@@ -7,10 +7,9 @@ const Home = () => (
       tagLine: "HELLO, MY NAME IS",
       title: "Adam Slater",
       subTitle: "Web Developer",
+      image: homeHero,
     }}
-    image={profilePic}
-  >
-  </PageTemplate>
+  ></PageTemplate>
 );
 
 export default Home;

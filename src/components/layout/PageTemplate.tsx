@@ -6,8 +6,8 @@ type PageTemplateProps = {
     title: string;
     subTitle?: string;
     tagLine?: string;
+    image: string;
   };
-  image: string;
   children?: ReactNode;
 };
 
@@ -59,13 +59,13 @@ const HeroImage = ({ image, altText }: { image: string; altText: string }) => (
   </div>
 );
 
-export const PageTemplate = ({ content, image, children }: PageTemplateProps) => (
+export const PageTemplate = ({ content, children }: PageTemplateProps) => (
   <main className="relative max-w-screen-xl w-full">
     <div className="absolute -right-64 -top-64 rounded-full bg-gradient-to-r from-primary to-gray-50 opacity-50 circle-backdrop"></div>
 
     <section className="flex flex-col-reverse sm:flex-row items-center justify-between gap-10 lg:gap-20 mt-20 sm:mt-0 mb-12 sm:h-screen">
       <HeroContent {...content} />
-      <HeroImage image={image} altText={`${content.title} page`} />
+      <HeroImage image={content.image} altText={`${content.title} page`} />
     </section>
 
     {children && <section>{children}</section>}
