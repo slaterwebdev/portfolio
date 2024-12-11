@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { navLinks, routes } from "@/utils/router";
-import { Navbar } from "@/components/layout/Navbar";
+import { Navbar, Footer } from "@/components";
 import logo from "@/assets/logo.png";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <div className="flex items-center flex-col overflow-x-hidden px-4">
           <Navbar navLinks={navLinks} title="ADAM SLATER" logo={logo} />
           <Routes>{routes}</Routes>
+          <Footer navLinks={navLinks} />
         </div>
       </Suspense>
     </BrowserRouter>
