@@ -9,7 +9,7 @@ import {
   bigMarketing,
   darwinQuote,
 } from "@/assets/porfolio";
-import { GridItem } from "@/utils/types";
+import { GridItem } from "@/utils";
 
 const portfolioImagesData: GridItem[] = [
   {

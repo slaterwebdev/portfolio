@@ -1,6 +1,6 @@
-import { scrollToTop } from "@/utils/utilities";
 import { ReactElement } from "react";
 import { NavLink } from "react-router-dom";
+import { scrollToTop } from "@/utils";
 
 type NavbarProps = {
   navLinks: Array<ReactElement>;

@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { contactLinks, currentYear } from "@/utils/constants";
+import { contactLinks, currentYear } from "@/utils";
 
 type FooterProps = {
   navLinks: Array<ReactNode>;

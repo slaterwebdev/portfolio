@@ -8,3 +8,4 @@ export { Section } from "./layout/Section";
 export { ParallaxImage } from "./UI/ParallaxImage";
 export { StackedCards } from "./UI/StackedCards";
 export { Grid } from "./UI/Grid";
+export { ListItem } from "./UI/ListItem";

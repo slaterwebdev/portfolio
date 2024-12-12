@@ -1,6 +1,4 @@
-import { GridItem } from "@/utils/types";
-import { getIcon } from "@/utils/iconMapper";
-import { fallBackImage } from "@/utils/constants";
+import { GridItem, fallBackImage, getIcon } from "@/utils";
 
 type GridProps = {
   items: GridItem[];

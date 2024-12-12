@@ -9,7 +9,7 @@ type RouteConfig = {
 };
 
 const routeConfig: RouteConfig[] = [
-  { route: "Home", path: "/", Component: lazy(() => import("@/pages/home/Home")) },
+  { route: "Home", path: "/", Component: lazy(() => import("@/pages/Home")) },
   {
     route: "About",
     path: "/about",

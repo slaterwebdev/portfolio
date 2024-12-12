@@ -1,4 +1,4 @@
-import { contactLinks } from "@/utils/constants";
+import { contactLinks } from "@/utils";
 
 type PageTemplateProps = {
   content: {

@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import { generateRandomDegrees } from "@/utils/utilities";
-import { GridItem } from "@/utils/types";
-import { fallBackImage } from "@/utils/constants";
+import { fallBackImage, GridItem, generateRandomDegrees } from "@/utils";
 
 const BASE_CARD_CLASSES = `absolute bg-white rounded-lg shadow-lg transform transition-all duration-500 ease-in-out bg-cover bg-center bg-no-repeat inset-0`;
 

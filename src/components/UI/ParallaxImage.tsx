@@ -1,4 +1,4 @@
-import { fallBackImage } from "@/utils/constants";
+import { fallBackImage } from "@/utils";
 
 export const ParallaxImage = ({ imageUrl }: { imageUrl: string }) => (
   <div

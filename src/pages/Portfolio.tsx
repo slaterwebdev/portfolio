@@ -1,11 +1,11 @@
-import { PageTemplate, Section, Grid } from "@/components";
 import portfolioHero from "@/assets/heros/portfolioHero.jpg";
-import { portfolioImages } from "@/utils/imageMapper";
+import { PageTemplate, Section, Grid } from "@/components";
+import { PageContent, portfolioImages } from "@/utils";
 
-const sections = [
+const pageContent: PageContent[] = [
   {
     title: "Key B2C Frontend builds",
-    description: (
+    children: (
       <p>
         A few handpicked examples of many B2C client-facing websites where I
         made major contributions or led the frontend development, delivering
@@ -15,13 +15,11 @@ const sections = [
         functionality and exceptional user experiences.
       </p>
     ),
-    gridProps: {
-      items: portfolioImages.B2C,
-    },
+    component: <Grid items={portfolioImages.B2C} />,
   },
   {
     title: "B2B Frontend Internal Apps",
-    description: (
+    children: (
       <>
         <p>
           I have previously developed private internal applications for
@@ -40,17 +38,11 @@ const sections = [
         </p>
       </>
     ),
-    gridProps: {
-      items: portfolioImages.B2B,
-      columns: "1fr 1fr",
-    },
+    component: <Grid items={portfolioImages.B2B} columns="1fr 1fr" />,
   },
   {
     title: "Previous Employers",
-    gridProps: {
-      items: portfolioImages.employers,
-      columns: "1fr 1fr",
-    },
+    component: <Grid items={portfolioImages.employers} columns="1fr 1fr" />,
   },
 ];
 
@@ -61,15 +53,13 @@ const Portfolio = () => (
     }}
     image={portfolioHero}
   >
-    {sections.map(
-      ({ title, description, gridProps }, index) => (
-        <Section key={index} title={title} contentStyles="font-playfair">
-          {description}
-          {gridProps && <Grid {...gridProps} />}
-        </Section>
-      )
-    )}
+    {pageContent.map(({ title, children, component }, index) => (
+      <Section key={index} title={title || ""} contentStyles="font-playfair">
+        {children}
+        {component && component}
+      </Section>
+    ))}
   </PageTemplate>
-  );
+);
 
 export default Portfolio;
