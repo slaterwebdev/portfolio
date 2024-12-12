@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { scrollToTop } from "@/utils/utilities";
-import { Section, StackedCards } from "@/components";
+import { Section, StackedCards, Grid } from "@/components";
 import { portfolioImages } from "@/utils/imageMapper";
+import { GridItem } from "@/utils/types";
 
 export const WelcomeSection = () => (
   <>
@@ -39,6 +40,31 @@ export const WelcomeSection = () => (
     </Section>
   </>
 );
+
+export const ServicesSection = () => {
+  const serviceOptions: GridItem[] = [
+    {
+      id: "laptop",
+      content:
+        "I excel at building scalable, maintainable web applications using React, Vue.js, and TypeScript, delivering clean, reusable code that drives performance and supports millions of users.",
+    },
+    {
+      id: "stack",
+      content:
+        "With a strong foundation in frontend development using React and Vue.js, I am expanding into Node.js to deliver seamless, end-to-end solutions. I consistently adapt and grow, always ensuring versatility.",
+    },
+    {
+      id: "api",
+      content:
+        "I specialize in integrating REST APIs to power dynamic, data-driven interfaces paired with pixel-perfect UIs, enhancing user experiences, boosting conversions, and streamlining workflows.",
+    },
+  ];
+  return (
+    <Section title="What I bring to the table" titleStyles="text-3xl">
+      <Grid items={serviceOptions} gap="2rem" />
+    </Section>
+  )
+}
 
 export const PortfolioSection = () => (
   <Section

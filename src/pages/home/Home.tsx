@@ -1,7 +1,7 @@
 import { ParallaxImage, PageTemplate } from "@/components";
 import homeHero from "@/assets/heros/homeHero.png"
 import parallaxImageUrl from "@/assets/parallax-test.jpg";
-import { PortfolioSection, WelcomeSection } from "./HomeComponents";
+import { PortfolioSection, ServicesSection, WelcomeSection } from "./HomeComponents";
 
 const Home = () => (
   <PageTemplate
@@ -14,6 +14,7 @@ const Home = () => (
   >
     <WelcomeSection />
     <ParallaxImage imageUrl={parallaxImageUrl} />
+    <ServicesSection />
     <PortfolioSection />
   </PageTemplate>
 );

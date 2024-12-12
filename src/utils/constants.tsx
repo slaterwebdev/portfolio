@@ -36,4 +36,5 @@ export const contactLinks: Array<{
     icon: getIcon("cv"),
     color: "text-red-500",
   },
-];
+  ];
+
