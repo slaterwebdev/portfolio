@@ -27,19 +27,17 @@ const routeConfig: RouteConfig[] = [
   },
 ];
 
-export const routes = routeConfig.map(({ path, Component }, index) => (
+export const routes: JSX.Element[] = routeConfig.map(({ path, Component }, index) => (
   <Route key={index} path={path} element={<Component />} />
 ));
 
-export const navLinks = routeConfig.map(({ route, path }) => (
+export const navLinks: JSX.Element[] = routeConfig.map(({ route, path }) => (
   <NavLink
     key={path}
     to={path}
     onClick={() => scrollToTop()}
     className={({ isActive }) =>
-      `hover:text-primary px-2 ${
-        isActive ? "text-secondary font-bold" : ""
-      }`
+      `hover:text-primary px-2 ${isActive ? "text-secondary font-bold" : ""}`
     }
   >
     {route}

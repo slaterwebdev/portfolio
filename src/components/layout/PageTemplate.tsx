@@ -1,5 +1,7 @@
-import { contactLinks } from "@/utils/constants";
+import { contactLinks, linkedinURL } from "@/utils/constants";
+import { getIcon } from "@/utils/iconMapper";
 import { ReactNode } from "react";
+import { ContactLinks } from "../UI/ContactLinks";
 
 type PageTemplateProps = {
   content: {
@@ -20,31 +22,29 @@ const HeroContent = ({
   subTitle?: string;
   tagLine?: string;
 }) => (
-  <div className="text-slate-500 font-playfair flex flex-col gap-3 z-10 w-full sm:w-auto">
-    {tagLine && <p className="text-md lg:text-lg">{tagLine}</p>}
+  <div className="font-playfair flex flex-col gap-3 z-10 w-full sm:w-auto">
+    {tagLine && <p className="text-md text-slate-500 lg:text-lg">{tagLine}</p>}
 
     <div className="bg-slate-500 w-20 h-1 my-4"></div>
 
     <h1 className="text-5xl lg:text-8xl font-bold text-black">{title}</h1>
 
     {subTitle && (
-      <h2 className="text-3xl lg:text-4xl font-semibold">{subTitle}</h2>
-    )}
-
-    <div className="text-black font-sans mt-6">
-      {contactLinks.map(({ href, label, icon }, index) => (
+      <div className="flex gap-5">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-slate-500">
+          {subTitle}
+        </h2>
         <a
-          key={index}
-          href={href}
+          href={linkedinURL}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-5 mb-2 hover:scale-105 transition-transform underline"
+          className="hover:scale-105 transition-transform mt-2.5"
         >
-          {icon}
-          {label}
+          <span className="text-blue-600">{getIcon("linkedin")}</span>
         </a>
-      ))}
-    </div>
+      </div>
+    )}
+    <ContactLinks contactLinks={contactLinks} />
   </div>
 );
 

@@ -1,8 +1,7 @@
-import { getIcon } from "@/utils/iconMapper";
+import { getIcon } from "./iconMapper";
 
 //GENERAL
 export const linkedinURL = "https://www.linkedin.com/in/adam-slater-web-dev/";
-export const githubURL = "https://github.com/slaterwebdev";
 export const portfolioRepoURL = "https://github.com/slaterwebdev/portfolio";
 export const fallBackImage = "/src/assets/fallbackImage.png";
 
@@ -11,11 +10,6 @@ export const contactLinks: Array<{
   label: string;
   icon: JSX.Element;
 }> = [
-  {
-    href: "mailto:adamslater1996@outlook.com",
-    label: "adamslater1996@outlook.com",
-    icon: getIcon("email"),
-  },
   {
     href: "tel:07547620652",
     label: "07547620652",
@@ -28,9 +22,7 @@ export const contactLinks: Array<{
   },
   {
     href: "/cv.pdf",
-    label: "View My CV",
+    label: "View CV",
     icon: getIcon("cv"),
   },
-  ];
-
-  
+];

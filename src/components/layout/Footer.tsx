@@ -1,23 +1,12 @@
-import { githubURL, linkedinURL } from "@/utils/constants";
-import { getIcon } from "@/utils/iconMapper";
 import { ReactNode } from "react";
+import { ContactLinks } from "@/components/UI/ContactLinks";
+import { contactLinks } from "@/utils/constants";
 
 type FooterProps = {
   navLinks: Array<ReactNode>;
 };
 
 const currentYear = new Date().getFullYear();
-
-const socialLinks = [
-  {
-    href: githubURL,
-    icon: getIcon("github"),
-  },
-  {
-    href: linkedinURL,
-    icon: getIcon("linkedin"),
-  },
-];
 
 export const Footer = ({ navLinks }: FooterProps) => (
   <footer className="bg-gray-800 text-white p-4 w-screen">
@@ -28,18 +17,8 @@ export const Footer = ({ navLinks }: FooterProps) => (
 
       <nav className="flex gap-6">{navLinks}</nav>
 
-      <div className="flex gap-4">
-        {socialLinks.map(({ href, icon }, index) => (
-          <a
-            key={index}
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-primary focus:outline focus:outline-2 focus:outline-primary"
-          >
-            {icon}
-          </a>
-        ))}
+      <div className="theme-light">
+        <ContactLinks isRow contactLinks={contactLinks} />
       </div>
     </div>
   </footer>
