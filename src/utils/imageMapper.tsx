@@ -9,7 +9,7 @@ import {
   bigMarketing,
   darwinQuote,
 } from "@/assets/porfolio";
-import { GridItem } from "@/utils";
+import { GridItem } from "@/utils/types";
 
 const portfolioImagesData: GridItem[] = [
   {
@@ -73,3 +73,5 @@ export const portfolioImages = {
   B2B: portfolioImagesData.filter((item) => item.category === "B2B"),
   employers: portfolioImagesData.filter((item) => item.employer),
 };
+
+export const fallBackImage = "/src/assets/fallbackImage.png";

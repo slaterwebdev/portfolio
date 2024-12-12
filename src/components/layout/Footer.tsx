@@ -1,9 +1,11 @@
 import { ReactNode } from "react";
-import { contactLinks, currentYear } from "@/utils";
+import { contactLinks } from "@/utils";
 
 type FooterProps = {
   navLinks: Array<ReactNode>;
 };
+
+const currentYear = new Date().getFullYear();
 
 export const Footer = ({ navLinks }: FooterProps) => (
   <footer className="bg-gray-800 text-white p-4 w-screen">

@@ -1,7 +1,14 @@
 import aboutHero from "@/assets/heros/aboutHero.jpg";
 import parallaxImageUrl from "@/assets/parallax-test.jpg";
-import { PageTemplate, ParallaxImage, Section, ListItem } from "@/components";
-import { workExp, PageContent } from "@/utils";
+import {
+  PageTemplate,
+  ParallaxImage,
+  Section,
+  ListItem,
+  Accordion,
+} from "@/components";
+import { workExp, skillsMapper } from "@/utils"
+import {PageContent} from "@/utils/types"
 
 const pageContent: PageContent[] = [
   {
@@ -32,6 +39,17 @@ const pageContent: PageContent[] = [
     ),
   },
   { component: <ParallaxImage imageUrl={parallaxImageUrl} /> },
+  {
+    title: "What I can offer",
+    sideContent: <Accordion items={skillsMapper} />,
+    children: (
+      <p>
+        From understanding your requirements, designing a blueprint and
+        delivering the final product, I do everything that falls in between
+        these lines.
+      </p>
+    ),
+  },
 ];
 
 const About = () => (

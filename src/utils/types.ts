@@ -26,3 +26,9 @@ export type SectionProps = {
 export type PageContent = SectionProps & {
   component?: React.ReactNode;
 };
+
+export type SkillsMapper = {
+  title: string;
+  type: "list" | "icons";
+  content: Array<string>;
+};

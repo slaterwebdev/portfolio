@@ -1,13 +1,15 @@
 import { NavLink } from "react-router-dom";
 import parallaxImageUrl from "@/assets/parallax-test.jpg";
 import homeHero from "@/assets/heros/homeHero.png";
-import { Grid, PageTemplate, ParallaxImage, Section, StackedCards } from "@/components";
 import {
-  scrollToTop,
-  PageContent,
-  portfolioImages,
-  serviceOptions,
-} from "@/utils";
+  Grid,
+  PageTemplate,
+  ParallaxImage,
+  Section,
+  StackedCards,
+} from "@/components";
+import { scrollToTop, portfolioImages, serviceOptions } from "@/utils";
+import { PageContent } from "@/utils/types";
 
 const pageContent: PageContent[] = [
   {
@@ -87,7 +89,18 @@ const Home = () => (
     image={homeHero}
   >
     {pageContent.map(
-      ({ title, children, component, titleStyles, contentStyles, sideContent, row }, index) => (
+      (
+        {
+          title,
+          children,
+          component,
+          titleStyles,
+          contentStyles,
+          sideContent,
+          row,
+        },
+        index
+      ) => (
         <Section
           key={index}
           title={title || ""}

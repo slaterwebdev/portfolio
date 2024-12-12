@@ -1,6 +1,7 @@
 import portfolioHero from "@/assets/heros/portfolioHero.jpg";
 import { PageTemplate, Section, Grid } from "@/components";
-import { PageContent, portfolioImages } from "@/utils";
+import { portfolioImages } from "@/utils";
+import { PageContent } from "@/utils/types";
 
 const pageContent: PageContent[] = [
   {

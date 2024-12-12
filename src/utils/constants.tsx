@@ -1,11 +1,9 @@
-import { WorkExp, GridItem, getIcon } from "@/utils";
+import { getIcon } from "@/utils";
+import { WorkExp, GridItem, SkillsMapper } from "@/utils/types";
 
 //GENERAL
 export const linkedinURL = "https://www.linkedin.com/in/adam-slater-web-dev/";
 export const portfolioRepoURL = "https://github.com/slaterwebdev/portfolio";
-export const fallBackImage = "/src/assets/fallbackImage.png";
-
-export const currentYear = new Date().getFullYear();
 
 export const contactLinks: Array<{
   href: string;
@@ -79,5 +77,50 @@ export const workExp: WorkExp[] = [
     jobTitle: "JUNIOR REACT AND JAVASCRIPT DEVELOPER",
     content:
       "Developed a variation of event and sign-up sites for a small London-based agency specialising in the automotive industry using react and plain javascript. As well as assisting with implementing JavaScript on WordPress sites by building and customising plugins.",
+  },
+];
+
+export const skillsMapper: SkillsMapper[] = [
+  {
+    title: "Languages & Frameworks",
+    type: "icons",
+    content: [
+      "javascript",
+      "html",
+      "css",
+      "typescript",
+      "react",
+      "nodeJs",
+      "vueJs",
+      "firebase",
+    ],
+  },
+  {
+    title: "Dev Tools & Libraries",
+    type: "icons",
+    content: [
+      "redux",
+      "tailwind",
+      "sass",
+      "bootstrap",
+      "wordpress",
+      "vite",
+      "webpack",
+    ],
+  },
+  {
+    title: "Platforms & Version Control",
+    type: "icons",
+    content: ["azure", "github", "git"],
+  },
+  {
+    title: "Dev Practices & Concepts",
+    type: "list",
+    content: [
+      "REST APIs",
+      "UX/UI",
+      "Agile Methodologies",
+      "Software Design Principles",
+    ],
   },
 ];
