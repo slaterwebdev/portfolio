@@ -11,25 +11,29 @@ export const contactLinks: Array<{
   href: string;
   label: string;
   icon: JSX.Element;
+  color?: string;
 }> = [
-  {
-    href: "tel:07547620652",
-    label: "07547620652",
-    icon: getIcon("phone"),
-  },
   {
     href: portfolioRepoURL,
     label: "Site Repository",
     icon: getIcon("github"),
   },
   {
-    href: "/cv.pdf",
-    label: "View CV",
-    icon: getIcon("cv"),
+    href: "tel:07547620652",
+    label: "07547620652",
+    icon: getIcon("phone"),
+    color: "text-lime-500",
   },
   {
     href: linkedinURL,
     label: "View Profile",
     icon: getIcon("linkedin"),
+    color: "text-blue-600",
+  },
+  {
+    href: "/cv.pdf",
+    label: "View CV",
+    icon: getIcon("cv"),
+    color: "text-red-500",
   },
 ];

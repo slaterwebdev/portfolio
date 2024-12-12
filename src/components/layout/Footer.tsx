@@ -1,5 +1,4 @@
 import { ReactNode } from "react";
-import { LinkList } from "@/components";
 import { contactLinks, currentYear } from "@/utils/constants";
 
 type FooterProps = {
@@ -15,8 +14,18 @@ export const Footer = ({ navLinks }: FooterProps) => (
 
       <nav className="flex gap-6">{navLinks}</nav>
 
-      <div className="theme-light">
-        <LinkList isRow links={contactLinks} />
+      <div className="flex gap-4 items-center">
+        {contactLinks.map(({ href, icon }, index) => (
+          <a
+            key={index}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary"
+          >
+            {icon}
+          </a>
+        ))}
       </div>
     </div>
   </footer>

@@ -1,5 +1,4 @@
 import { contactLinks } from "@/utils/constants";
-import { LinkList } from "@/components";
 
 type PageTemplateProps = {
   content: {
@@ -34,7 +33,20 @@ const HeroContent = ({
         </h2>
       </div>
     )}
-    <LinkList links={contactLinks} />
+    <div className="flex flex-col gap-1 font-sans mt-6">
+      {contactLinks.map(({ href, icon, label, color }, index) => (
+        <a
+          key={index}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-primary hover:scale-105 flex gap-5 items-center"
+        >
+          <span className={color || ''}>{icon}</span>
+          {label}
+        </a>
+      ))}
+    </div>
   </div>
 );
 
