@@ -1,12 +1,10 @@
 import { ReactNode } from "react";
-import { ContactLinks } from "@/components/UI/ContactLinks";
-import { contactLinks } from "@/utils/constants";
+import { LinkList } from "@/components";
+import { contactLinks, currentYear } from "@/utils/constants";
 
 type FooterProps = {
   navLinks: Array<ReactNode>;
 };
-
-const currentYear = new Date().getFullYear();
 
 export const Footer = ({ navLinks }: FooterProps) => (
   <footer className="bg-gray-800 text-white p-4 w-screen">
@@ -18,7 +16,7 @@ export const Footer = ({ navLinks }: FooterProps) => (
       <nav className="flex gap-6">{navLinks}</nav>
 
       <div className="theme-light">
-        <ContactLinks isRow contactLinks={contactLinks} />
+        <LinkList isRow links={contactLinks} />
       </div>
     </div>
   </footer>

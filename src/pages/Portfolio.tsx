@@ -5,8 +5,8 @@ const Portfolio = () => (
   <PageTemplate
     content={{
       title: "Portfolio",
-      image: portfolioHero,
     }}
+    image={portfolioHero}
   >
     <Section title="Key B2C Frontend builds" contentStyles="font-playfair">
       <p>

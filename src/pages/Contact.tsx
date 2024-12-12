@@ -5,8 +5,8 @@ const Contact = () => (
   <PageTemplate
     content={{
       title: "Get In Touch",
-      image: contactHero,
     }}
+    image={contactHero}
   >
     <Section title="Send me a message" contentStyles="text-3xl">
       <p>

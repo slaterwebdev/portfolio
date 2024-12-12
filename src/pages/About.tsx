@@ -6,8 +6,8 @@ const About = () => (
   <PageTemplate
     content={{
       title: "About",
-      image: aboutHero,
     }}
+    image={aboutHero}
   >
     <Section
       title="About me"

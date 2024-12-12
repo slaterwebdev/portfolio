@@ -6,3 +6,5 @@ export { Section } from "./layout/Section";
 
 // UI Components 
 export { ParallaxImage } from "./UI/ParallaxImage";
+export { StackedCards } from "./UI/StackedCards";
+export { LinkList } from "./UI/LinkList";

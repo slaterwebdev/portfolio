@@ -1,16 +1,14 @@
-import { contactLinks, linkedinURL } from "@/utils/constants";
-import { getIcon } from "@/utils/iconMapper";
-import { ReactNode } from "react";
-import { ContactLinks } from "../UI/ContactLinks";
+import { contactLinks } from "@/utils/constants";
+import { LinkList } from "@/components";
 
 type PageTemplateProps = {
   content: {
     title: string;
     subTitle?: string;
     tagLine?: string;
-    image: string;
   };
-  children?: ReactNode;
+  image: string;
+  children?: React.ReactNode;
 };
 
 const HeroContent = ({
@@ -34,17 +32,9 @@ const HeroContent = ({
         <h2 className="text-3xl lg:text-4xl font-semibold text-slate-500">
           {subTitle}
         </h2>
-        <a
-          href={linkedinURL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-105 transition-transform mt-2.5"
-        >
-          <span className="text-blue-600">{getIcon("linkedin")}</span>
-        </a>
       </div>
     )}
-    <ContactLinks contactLinks={contactLinks} />
+    <LinkList links={contactLinks} />
   </div>
 );
 
@@ -59,15 +49,15 @@ const HeroImage = ({ image, altText }: { image: string; altText: string }) => (
   </div>
 );
 
-export const PageTemplate = ({ content, children }: PageTemplateProps) => (
-  <main className="relative max-w-screen-xl w-full">
+export const PageTemplate = ({ content, children, image }: PageTemplateProps) => (
+  <main className="relative max-w-screen-xl w-full mb-12 sm:mb-24">
     <div className="absolute -right-64 -top-64 rounded-full bg-gradient-to-r from-primary to-gray-50 opacity-50 circle-backdrop"></div>
 
     <section className="flex flex-col-reverse sm:flex-row items-center justify-between gap-10 lg:gap-20 mt-20 sm:mt-0 mb-12 sm:h-screen">
       <HeroContent {...content} />
-      <HeroImage image={content.image} altText={`${content.title} page`} />
+      <HeroImage image={image} altText={`${content.title} page`} />
     </section>
 
-    {children && <section>{children}</section>}
+    {children && <section className="flex flex-col gap-12 sm:gap-24">{children}</section>}
   </main>
 );

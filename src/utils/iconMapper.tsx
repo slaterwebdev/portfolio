@@ -9,7 +9,7 @@ const iconMapper: { [key: string]: JSX.Element } = {
   phone: <FaPhone />,
   email: <FaMailBulk />,
   cv: <HiDocumentText size={20} />,
-  linkedin: <FaLinkedin size={28} />,
+  linkedin: <FaLinkedin size={20} />,
   default: <HiOutlineQuestionMarkCircle size={24} className="text-gray-500" />,
 };
 

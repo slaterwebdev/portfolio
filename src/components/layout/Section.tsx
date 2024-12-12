@@ -17,7 +17,7 @@ export const Section = ({
 }: SectionProps) => (
   <section className="flex flex-col justify-between sm:flex-row gap-12 sm:flex-row">
     <div
-      className={`flex flex-col gap-6 ${row && "sm:flex-row"} mb-12 sm:mb-24 w-full`}
+      className={`flex flex-col gap-6 ${row && "sm:flex-row"} w-full`}
     >
       <h1 className={`text-primary ${row && "sm:w-1/2"} ${titleStyles}`}>
         {title}
