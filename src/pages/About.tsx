@@ -7,8 +7,24 @@ import {
   ListItem,
   Accordion,
 } from "@/components";
-import { workExp, skillsMapper } from "@/utils"
-import {PageContent} from "@/utils/types"
+import { workExp, skillsMapper, getIcon } from "@/utils";
+import { PageContent } from "@/utils/types";
+
+const skillsAccordionItems = skillsMapper.map(({ title, content }) => ({
+  title,
+  content: content.map((skill, index) => {
+    const icon = getIcon(skill);
+    const isDefaultIcon = icon.props.id === "default";
+
+    return isDefaultIcon ? (
+      <ListItem title={skill} />
+    ) : (
+      <span key={index} className="float text-2xl">
+        {icon}
+      </span>
+    );
+  }),
+}));
 
 const pageContent: PageContent[] = [
   {
@@ -41,7 +57,7 @@ const pageContent: PageContent[] = [
   { component: <ParallaxImage imageUrl={parallaxImageUrl} /> },
   {
     title: "What I can offer",
-    sideContent: <Accordion items={skillsMapper} />,
+    sideContent: <Accordion items={skillsAccordionItems} />,
     children: (
       <p>
         From understanding your requirements, designing a blueprint and
@@ -59,11 +75,18 @@ const About = () => (
     }}
     image={aboutHero}
   >
-    {pageContent.map(({ title, children, component, contentStyles }, index) => (
-      <Section key={index} title={title || ""} contentStyles={contentStyles}>
-        {children || component}
-      </Section>
-    ))}
+    {pageContent.map(
+      ({ title, children, component, contentStyles, sideContent }, index) => (
+        <Section
+          key={index}
+          title={title || ""}
+          contentStyles={contentStyles}
+          sideContent={sideContent}
+        >
+          {children || component}
+        </Section>
+      )
+    )}
   </PageTemplate>
 );
 

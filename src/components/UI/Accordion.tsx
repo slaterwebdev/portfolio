@@ -1,13 +1,10 @@
-import { getIcon } from "@/utils/iconMapper";
 import { FaChevronLeft } from "react-icons/fa";
-import { ListItem } from "./ListItem";
 import { useState } from "react";
 
 type AccordionProps = {
   items: {
     title: string;
-    type: "list" | "icons";
-    content?: Array<string>;
+    content?: React.ReactNode;
   }[];
 };
 
@@ -19,8 +16,8 @@ export const Accordion = ({ items }: AccordionProps) => {
   };
 
   return (
-    <div className="mb-12 w-full">
-      {items.map(({ title, content, type }, index) => (
+    <div className="w-full">
+      {items.map(({ title, content }, index) => (
         <div key={index} className="shadow">
           <button
             onClick={() => toggleAccordion(index)}
@@ -28,30 +25,18 @@ export const Accordion = ({ items }: AccordionProps) => {
           >
             <span>{title}</span>
             <FaChevronLeft
-              className={`transform transition-transform duration-500 ${
+              className={`transform transition-transform duration-300 ${
                 openIndex === index && "-rotate-90"
               }`}
             />
           </button>
           <div
-            className={`overflow-hidden bg-white border-b ${
-              openIndex === index ? "max-h-fit" : "max-h-0"
+            className={`overflow-hidden bg-white border-b transition-[max-height] duration-400 ease-in-out ${
+              openIndex === index ? "max-h-96" : "max-h-0"
             }`}
           >
             <div className="p-4 flex flex-wrap items-center justify-center gap-5">
-              {type === "list" ? (
-                <ul className="w-full">
-                  {content?.map((item) => (
-                    <ListItem key={item} title={item} />
-                  ))}
-                </ul>
-              ) : (
-                content?.map((iconKey, i) => (
-                  <span key={i} className="text-3xl float">
-                    {getIcon(iconKey)}
-                  </span>
-                ))
-              )}
+              {content}
             </div>
           </div>
         </div>

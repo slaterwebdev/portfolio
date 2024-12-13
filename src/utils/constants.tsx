@@ -4,6 +4,7 @@ import { WorkExp, GridItem, SkillsMapper } from "@/utils/types";
 //GENERAL
 export const linkedinURL = "https://www.linkedin.com/in/adam-slater-web-dev/";
 export const portfolioRepoURL = "https://github.com/slaterwebdev/portfolio";
+export const fallBackImage = "/src/assets/fallbackImage.png";
 
 export const contactLinks: Array<{
   href: string;
@@ -83,7 +84,6 @@ export const workExp: WorkExp[] = [
 export const skillsMapper: SkillsMapper[] = [
   {
     title: "Languages & Frameworks",
-    type: "icons",
     content: [
       "javascript",
       "html",
@@ -97,7 +97,6 @@ export const skillsMapper: SkillsMapper[] = [
   },
   {
     title: "Dev Tools & Libraries",
-    type: "icons",
     content: [
       "redux",
       "tailwind",
@@ -110,12 +109,10 @@ export const skillsMapper: SkillsMapper[] = [
   },
   {
     title: "Platforms & Version Control",
-    type: "icons",
     content: ["azure", "github", "git"],
   },
   {
     title: "Dev Practices & Concepts",
-    type: "list",
     content: [
       "REST APIs",
       "UX/UI",

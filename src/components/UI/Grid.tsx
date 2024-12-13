@@ -1,4 +1,5 @@
-import { GridItem, fallBackImage, getIcon } from "@/utils";
+import { fallBackImage, getIcon } from "@/utils";
+import { GridItem } from "@/utils/types";
 
 type GridProps = {
   items: GridItem[];

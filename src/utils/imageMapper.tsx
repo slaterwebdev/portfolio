@@ -73,5 +73,3 @@ export const portfolioImages = {
   B2B: portfolioImagesData.filter((item) => item.category === "B2B"),
   employers: portfolioImagesData.filter((item) => item.employer),
 };
-
-export const fallBackImage = "/src/assets/fallbackImage.png";

@@ -29,6 +29,5 @@ export type PageContent = SectionProps & {
 
 export type SkillsMapper = {
   title: string;
-  type: "list" | "icons";
   content: Array<string>;
 };
