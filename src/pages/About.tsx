@@ -7,20 +7,19 @@ import {
   ListItem,
   Accordion,
 } from "@/components";
-import { workExp, skillsMapper, getIcon } from "@/utils";
+import { workExp, skillsData, getIcon } from "@/utils";
 import { PageContent } from "@/utils/types";
 
-const skillsAccordionItems = skillsMapper.map(({ title, content }) => ({
+const skillsAccordionItems = skillsData.map(({ title, content }) => ({
   title,
   content: content.map((skill, index) => {
-    const icon = getIcon(skill);
-    const isDefaultIcon = icon.props.id === "default";
+    const isDefaultIcon = getIcon(skill).props.id === "default";
 
     return isDefaultIcon ? (
       <ListItem title={skill} />
     ) : (
-      <span key={index} className="float text-2xl">
-        {icon}
+      <span key={index} className="text-2xl mx-2">
+        {getIcon(skill)}
       </span>
     );
   }),

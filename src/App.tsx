@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Suspense
         fallback={
-          <div className="flex flex-col justify-center min-h-screen">
+          <div className="flex flex-col justify-center min-h-screen text-center">
             Loading...
           </div>
         }

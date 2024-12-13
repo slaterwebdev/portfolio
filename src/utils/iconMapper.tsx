@@ -24,6 +24,7 @@ const iconMapper: { [key: string]: JSX.Element } = {
   azure: <i className="devicon-azuredevops-plain colored"></i>,
   git: <i className="devicon-git-plain colored"></i>,
   github: <i className="devicon-github-original colored"></i>,
+  figma: <i className="devicon-figma-plain colored"></i>,
 
   api: <AiOutlineApi size={24} />,
   laptop: <FaLaptop size={24} />,

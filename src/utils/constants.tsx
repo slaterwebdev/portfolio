@@ -81,7 +81,7 @@ export const workExp: WorkExp[] = [
   },
 ];
 
-export const skillsMapper: SkillsMapper[] = [
+export const skillsData: SkillsMapper[] = [
   {
     title: "Languages & Frameworks",
     content: [
@@ -109,7 +109,7 @@ export const skillsMapper: SkillsMapper[] = [
   },
   {
     title: "Platforms & Version Control",
-    content: ["azure", "github", "git"],
+    content: ["azure", "github", "git", "figma"],
   },
   {
     title: "Dev Practices & Concepts",

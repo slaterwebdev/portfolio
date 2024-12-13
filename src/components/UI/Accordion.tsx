@@ -35,9 +35,7 @@ export const Accordion = ({ items }: AccordionProps) => {
               openIndex === index ? "max-h-96" : "max-h-0"
             }`}
           >
-            <div className="p-4 flex flex-wrap items-center justify-center gap-5">
-              {content}
-            </div>
+            <div className="p-4 text-center float">{content}</div>
           </div>
         </div>
       ))}
