@@ -51,13 +51,15 @@ const Contact = () => (
       contentStyles="sm:text-2xl justify-between"
       sideContent={<Form formFields={formFields} />}
     >
-      <p>
+      <p className="font-playfair font-semibold">
         Whether you wish to discuss potential employment, share or colloborate,
         simply fill in this form or email me directly and I'll get back to you
         soon!
       </p>
       <a
         href={`mailto:${personalEmail}`}
+        target="_blank"
+        rel="noopener noreferrer"
         className="pb-1 flex items-center sm:justify-start justify-center gap-4 cursor-pointer hover:text-primary hover:scale-105"
       >
         {getIcon("email")}

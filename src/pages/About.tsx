@@ -16,7 +16,7 @@ const skillsAccordionItems = skillsData.map(({ title, content }) => ({
     const isDefaultIcon = getIcon(skill).props.id === "default";
 
     return isDefaultIcon ? (
-      <ListItem title={skill} />
+      <ListItem key={index} title={skill} />
     ) : (
       <span key={index} className="text-2xl mx-2">
         {getIcon(skill)}
