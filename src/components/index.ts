@@ -10,3 +10,4 @@ export { StackedCards } from "./UI/StackedCards";
 export { Grid } from "./UI/Grid";
 export { Accordion } from "./UI/Accordion";
 export { ListItem } from "./UI/ListItem";
+export { Form } from "./UI/form/Form";

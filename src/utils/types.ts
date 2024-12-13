@@ -31,3 +31,11 @@ export type SkillsMapper = {
   title: string;
   content: Array<string>;
 };
+
+export type FormFieldType = {
+  name: string;
+  type: "text" | "email" | "number" | "textarea";
+  placeholder: string;
+  rows?: number;
+  validate?: (value: string) => string;
+};
