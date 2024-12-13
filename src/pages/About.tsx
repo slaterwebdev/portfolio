@@ -29,7 +29,7 @@ const pageContent: PageContent[] = [
   {
     title: "About Me",
     titleStyles: "text-3xl",
-    contentStyles: "font-playfair text-3xl font-semibold sm:text-5xl",
+    contentStyles: "font-playfair font-semibold sm:text-3xl",
     children: (
       <p>
         I am an enthusiastic web dev based in the UK midlands, with a rich

@@ -4,6 +4,7 @@ import { WorkExp, GridItem, SkillsMapper } from "@/utils/types";
 //GENERAL
 export const linkedinURL = "https://www.linkedin.com/in/adam-slater-web-dev/";
 export const portfolioRepoURL = "https://github.com/slaterwebdev/portfolio";
+export const personalEmail = "adamslater1996@outlook.com";
 export const fallBackImage = "/src/assets/fallbackImage.png";
 
 export const contactLinks: Array<{

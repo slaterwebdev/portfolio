@@ -29,9 +29,9 @@ const iconMapper: { [key: string]: JSX.Element } = {
   api: <AiOutlineApi size={24} />,
   laptop: <FaLaptop size={24} />,
   stack: <RiStackLine size={24} />,
-  phone: <FaPhone className="text-primary" />,
-  email: <FaMailBulk className="text-primary" />,
-  linkedin: <FaLinkedin size={24} />,
+  phone: <FaPhone />,
+  email: <FaMailBulk />,
+  linkedin: <FaLinkedin size={20} />,
   cv: <HiDocumentText size={20} />,
   default: <HiOutlineQuestionMarkCircle id="default" size={24} className="text-gray-500" />,
 };

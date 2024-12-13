@@ -1,6 +1,7 @@
 import { Form, PageTemplate, Section } from "@/components";
 import contactHero from "@/assets/heros/contactHero.jpg";
 import { FormFieldType } from "@/utils/types";
+import { getIcon, personalEmail } from "@/utils";
 
 const formFields: FormFieldType[] = [
   {
@@ -47,17 +48,23 @@ const Contact = () => (
   >
     <Section
       title="Send me a message"
-      contentStyles="text-3xl"
+      contentStyles="sm:text-2xl justify-between"
       sideContent={<Form formFields={formFields} />}
     >
       <p>
-        Whether you wish to discuss potential employment, share & collaborate on
-        ideas or have a project for me, simply fill in this form and I'll get
-        back to you soon!
+        Whether you wish to discuss potential employment, share or colloborate,
+        simply fill in this form or email me directly and I'll get back to you
+        soon!
       </p>
+      <a
+        href={`mailto:${personalEmail}`}
+        className="pb-1 flex items-center sm:justify-start justify-center gap-4 cursor-pointer hover:text-primary hover:scale-105"
+      >
+        {getIcon("email")}
+        <p className="border-b">adamslater1996@outlook.com</p>
+      </a>
     </Section>
   </PageTemplate>
 );
 
 export default Contact;
-
