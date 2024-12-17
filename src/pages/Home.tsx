@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import parallaxImageUrl from "@/assets/parallax-test.jpg";
-import homeHero from "@/assets/heros/homeHero.png";
+import homeHero from "@/assets/heros/homeHero.jpg";
 import {
   Grid,
   PageTemplate,

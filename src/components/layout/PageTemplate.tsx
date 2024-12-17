@@ -51,11 +51,11 @@ const HeroContent = ({
 );
 
 const HeroImage = ({ image, altText }: { image: string; altText: string }) => (
-  <div className="rounded-full bg-white h-80 w-80 overflow-hidden z-10">
+  <div className="rounded-full bg-white w-80 lg:w-[500px] overflow-hidden z-10">
     <img
       src={image}
       alt={altText}
-      className="object-cover w-full h-full"
+      className="object-cover w-full"
       loading="lazy"
     />
   </div>
