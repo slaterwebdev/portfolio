@@ -11,8 +11,6 @@ const GridCard = ({ item }: { item: GridItem }) => {
   if (!item) return null;
   const { src, url, id, content } = item;
 
-  console.log(item)
-
   return src ? (
     <a
       href={url}
