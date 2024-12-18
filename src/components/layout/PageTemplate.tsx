@@ -63,9 +63,9 @@ const HeroImage = ({ image, altText }: { image: string; altText: string }) => (
 
 export const PageTemplate = ({ content, children, image }: PageTemplateProps) => (
   <main className="relative max-w-screen-xl w-full mb-12 sm:mb-24">
-    <div className="absolute -right-64 -top-64 rounded-full bg-gradient-to-r from-primary to-gray-50 opacity-50 circle-backdrop"></div>
+    <div className="absolute -right-64 -top-64 rounded-full bg-primary to-gray-50 opacity-30 circle-backdrop"></div>
 
-    <section className="flex flex-col-reverse sm:flex-row items-center justify-between gap-10 lg:gap-20 mt-20 sm:mt-0 mb-12 sm:h-screen">
+    <section className="flex flex-col-reverse sm:flex-row items-center justify-between gap-10 lg:gap-20 mt-20 sm:mt-0 mb-12 sm:h-screen max-h-[800px]">
       <HeroContent {...content} />
       <HeroImage image={image} altText={`${content.title} page`} />
     </section>

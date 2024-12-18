@@ -29,7 +29,7 @@ const GridCard = ({ item }: { item: GridItem }) => {
     </a>
   ) : (
     <div className="flex justify-between gap-5 items-center sm:mb-0 sm:flex-col shadow-lg rounded-md p-4">
-      {id && <i className="hover:text-primary">{getIcon(id)}</i>}
+      {id && <i>{getIcon(id)}</i>}
       {content && <p>{item.content}</p>}
     </div>
   );
