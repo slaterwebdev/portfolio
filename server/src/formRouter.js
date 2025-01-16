@@ -16,6 +16,10 @@ const readFormDataFile = async (filePath) => {
     }
     return JSON.parse(rawData);
   } catch (error) {
+    if (error.code === "ENOENT") {
+      await fs.writeFile(filePath, JSON.stringify([], null, 2));
+      return [];
+    }
     throw error;
   }
 };

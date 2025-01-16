@@ -11,9 +11,15 @@ const app = express();
 const middlewares = [
   { handler: cors({ origin: CLIENT }) },
   { handler: express.json() },
-  { path: "/images", handler: express.static(path.join(process.cwd(), "public/images")) },
-  { path: "/files", handler: express.static(path.join(process.cwd(), "public/files"))},
-  {path: "/api/pages", handler: pageRouter},
+  {
+    path: "/images",
+    handler: express.static(path.join(process.cwd(), "public/images")),
+  },
+  {
+    path: "/files",
+    handler: express.static(path.join(process.cwd(), "public/files")),
+  },
+  { path: "/api/pages", handler: pageRouter },
   { path: "/api/form", handler: formRouter },
 ];
 

@@ -3,7 +3,7 @@ import { getIcon } from "@/utils";
 export const linkedinURL = "https://www.linkedin.com/in/adam-slater-web-dev/";
 export const portfolioRepoURL = "https://github.com/slaterwebdev/portfolio";
 export const personalEmail = "adamslater1996@outlook.com";
-export const API_BASE_URL = import.meta.env.VITE_BASE_API_URL;
+export const API_BASE_URL = import.meta.env.VITE_BASE_API_URL || "https://adam-slater-portfolio.onrender.com";
 
 export const contactLinks: Array<{
   href: string;
