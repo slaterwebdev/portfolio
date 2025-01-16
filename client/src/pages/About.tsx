@@ -44,7 +44,7 @@ const pageContent: PageContent[] = [
         title,
         content: content.map((skill, index) => (
           getIcon(skill) ? (
-            <span key={index} className="text-2xl mx-2">
+            <span key={index} className="text-2xl mx-2 inline-block">
               {getIcon(skill)}
             </span>
           ) : (

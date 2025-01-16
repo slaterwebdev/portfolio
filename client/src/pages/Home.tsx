@@ -40,7 +40,7 @@ const pageContent: PageContent[] = [
             href="/portfolio"
             onClick={scrollToTop}
           >
-            VIEW MORE
+            VIEW WORK
           </a>
         </div>
       </>

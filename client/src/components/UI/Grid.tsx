@@ -16,15 +16,15 @@ const GridCard = ({ item }: { item: GridItem }) => {
       target="_blank"
       rel="noopener noreferrer"
       className={`bg-cover overflow-hidden bg-center bg-no-repeat pt-[55%] relative shadow-lg rounded-sm group block ${
-        url ? "hover:scale-105 hover:z-10" : ""
+        url ? "hover:scale-105" : ""
       }`}
       style={{
         backgroundImage: `url(${item.src})`,
       }}
     >
       {url && (
-        <div className="bg-black text-white w-full h-full top-32 sm:top-0 absolute opacity-70 sm:opacity-0 hover:opacity-70 flex justify-center sm:items-center cursor-pointer">
-          <h2 className="underline p-4">VIEW</h2>
+        <div className="bg-black text-white w-full h-[50px] sm:h-full bottom-0 absolute opacity-70 sm:opacity-0 hover:opacity-70 flex justify-center items-center cursor-pointer">
+          <h2 className="underline">VIEW</h2>
         </div>
       )}
     </a>

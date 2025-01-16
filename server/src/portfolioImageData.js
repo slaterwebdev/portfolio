@@ -1,52 +1,52 @@
 const rawPortfolioImageData = [
   {
     url: "https://car.arnoldclarkinsurance.com/assumptions",
-    src: "portfolio/arnoldClark.png",
+    src: "portfolio/arnoldClark.jpg",
     category: "B2C",
   },
   {
     url: "https://www.darwin-insurance.com/",
-    src: "portfolio/darwin.png",
+    src: "portfolio/darwin.jpg",
     category: "B2C",
   },
   {
     url: "https://getquote.gogirl.co.uk/quote/create",
-    src: "portfolio/goGirl.png",
+    src: "portfolio/goGirl.jpg",
     category: "B2C",
   },
   {
     url: "https://www.victorianplumbing.co.uk/",
-    src: "portfolio/vp.png",
+    src: "portfolio/vp.jpg",
     category: "B2C",
     employer: true,
   },
   {
-    src: "portfolio/howdens.png",
+    src: "portfolio/howdens.jpg",
     category: "B2B",
   },
   {
-    src: "portfolio/vpHelp.png",
+    src: "portfolio/vpHelp.jpg",
     url: "https://www.victorianplumbing.co.uk/help-and-customer-service",
     category: "B2B",
   },
   {
     url: "https://www.madebysauce.com/",
-    src: "portfolio/mbs.png",
+    src: "portfolio/mbs.jpg",
     employer: true,
   },
   {
     url: "https://bigmarketing.co.uk/",
-    src: "portfolio/bigMarketing.png",
+    src: "portfolio/bigMarketing.jpg",
     employer: true,
   },
   {
     url: "https://quote.darwin-insurance.com/quote/create",
-    src: "portfolio/darwinQuote.png",
+    src: "portfolio/darwinQuote.jpg",
     category: "B2C",
   },
   {
     url: "https://quote.wisedriving.com/quote/create/step/1",
-    src: "portfolio/wiseDriving.png",
+    src: "portfolio/wiseDriving.jpg",
     category: "B2C",
   },
 ];

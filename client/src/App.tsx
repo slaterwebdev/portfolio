@@ -1,26 +1,20 @@
-import { Suspense } from "react";
 import { BrowserRouter, Routes } from "react-router-dom";
 import { navLinks, routes } from "@/utils";
-import { Navbar, Footer } from "@/components";
+import { Footer, Navbar, Spinner } from "@/components";
 import logo from "@/assets/logo.png";
+import { Suspense } from "react";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Suspense
-        fallback={
-          <div className="flex flex-col justify-center min-h-screen text-center">
-            Loading...
-          </div>
-        }
-      >
-        <div className="flex items-center justify-between flex-col overflow-x-hidden px-4 h-screen">
+    <div className="flex items-center justify-between flex-col overflow-x-hidden px-4">
+      <BrowserRouter>
+        <Suspense fallback={<Spinner />}>
           <Navbar navLinks={navLinks} title="ADAM SLATER" logo={logo} />
           <Routes>{routes}</Routes>
           <Footer navLinks={navLinks} />
-        </div>
-      </Suspense>
-    </BrowserRouter>
+        </Suspense>
+      </BrowserRouter>
+    </div>
   );
 }
 

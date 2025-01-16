@@ -13,7 +13,10 @@ const middlewares = [
   { handler: express.json() },
   {
     path: "/images",
-    handler: express.static(path.join(process.cwd(), "public/images")),
+    handler: express.static(path.join(process.cwd(), "public/images"), {
+      maxAge: "1d",
+      etag: true,
+    }),
   },
   {
     path: "/files",

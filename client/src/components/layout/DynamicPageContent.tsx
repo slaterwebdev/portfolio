@@ -1,5 +1,5 @@
 import { useFetchPageData } from "@/hooks/useFetch";
-import { PageLayout, Section } from "@/components";
+import { PageLayout, Section, Spinner } from "@/components";
 import { ApiDataSection, PageContent } from "@/utils/types";
 
 const mergePageContentWithApiData = (
@@ -35,7 +35,7 @@ export const DynamicPageContent = ({ pageContent }: DynamicPageProps) => {
     );
   }
 
-  if (!data) return <p className="flex items-center h-screen">Loading...</p>;
+  if (!data) return <Spinner />;
 
   const mergedSections = mergePageContentWithApiData(
     pageContent,

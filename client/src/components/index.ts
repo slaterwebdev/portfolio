@@ -12,3 +12,4 @@ export { Grid } from "./UI/Grid";
 export { Accordion } from "./UI/Accordion";
 export { ListItem } from "./UI/ListItem";
 export { Form } from "./UI/form/Form";
+export { Spinner } from "./UI/Spinner";

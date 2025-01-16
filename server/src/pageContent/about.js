@@ -18,26 +18,26 @@ const aboutContent = {
           id: "Victorian Plumbing",
           jobTitle: "MID - SENIOR FRONTEND DEVELOPER",
           content:
-            "Designed and optimised internal data management applications for one of the UK's leading e-commerce platforms, leveraging React and TypeScript within an Agile sprint system and Azure DevOps. Actively participated in Three Amigos, Devsols, and software design sessions to shape architecture and implementation!",
+            "Designed and optimised internal data management applications for one of the UK's leading e-commerce platforms, leveraging React and TypeScript within an Agile sprint system and Azure DevOps. Actively participated and leading in Three Amigos, Devsols, and software design sessions to shape architecture and implementation.",
         },
         {
           yearsServed: "2022 - 2023",
           id: "Made by Sauce",
           jobTitle: "FRONTEND DEVELOPER",
           content:
-            "Contributed to internal apps for B2B clients and numerous “quote and buy” SPAs for B2C clients, including Arnold Clark, DARWIN, Howdens, Triumph, Ducati, and Adrian Flux, using React, Vue.js and TypeScript!",
+            "Contributed to internal apps for B2B clients and numerous “quote and buy” SPAs for B2C clients, including Arnold Clark, DARWIN, Howdens, Triumph, Ducati, and Adrian Flux, using React, Vue.js, October CMS and TypeScript.",
         },
         {
           yearsServed: "2021 - 2022",
           id: "Big Marketing",
           jobTitle: "JUNIOR REACT AND JAVASCRIPT DEVELOPER",
           content:
-            "Developed a variation of event and sign-up sites for a small London-based agency specialising in the automotive industry using react and plain javascript. As well as assisting with implementing JavaScript on WordPress sites by building and customising plugins.",
+            "Developed a variation of event and sign-up sites for a small London-based agency specialising in the automotive industry using react and plain JavaScript. As well as assisting with implementing JavaScript on WordPress sites by building and customising plugins.",
         },
       ],
     },
     featureImage: {
-      content: `${process.env.BASE_URL}/images/misc/parallax.jpg`,
+      content: `${process.env.BASE_URL}/images/misc/parallax.webp`,
     },
     skills: {
       title: "What I can offer",

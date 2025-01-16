@@ -8,7 +8,7 @@ const contactContent = {
     communication: {
       title: "Send me a message",
       content:
-        "Whether you wish to discuss potential employment, share ideas or collaborate, simply fill in this form or even email me directly. I'm always eager to meet new people, discover oppotunities, and solve the next problem.",
+        "Whether you wish to discuss potential employment, share ideas or collaborate, simply fill in this form or even email me directly. I am always eager to meet new people, discover opportunities, and solve the next problem.",
     },
   },
 };

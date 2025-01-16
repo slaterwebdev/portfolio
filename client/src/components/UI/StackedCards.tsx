@@ -21,16 +21,17 @@ export const StackedCards = ({
   width = "320px",
 }: StackedCardsProps) => {
   const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => setIsHovered(true);
-  const handleMouseLeave = () => setIsHovered(false);
+  const handleHover = (e: { pageX: number }, bool: boolean) =>
+    e.pageX > 400 && setIsHovered(bool);
+
   return (
     <div
-      className="w-full max-w-sm"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      className="w-full max-w-sm pb-8"
+      onMouseEnter={(e) => handleHover(e, true)}
+      onMouseLeave={(e) => handleHover(e, false)}
     >
       <div
-        className="mx-auto group p-4 relative hover:overflow-scroll mb-6"
+        className="mx-auto p-4 relative sm:hover:overflow-x-scroll mb-6"
         style={{
           height: height,
           width: width,
@@ -41,7 +42,7 @@ export const StackedCards = ({
 
           const transformValue = isHovered
             ? `rotate(0deg) translateX(${index * 120}%)`
-            : `rotate(${generateRandomDegrees()})`;
+            : `translateX(0) rotate(${generateRandomDegrees()})`;
 
           return (
             <a
@@ -59,8 +60,8 @@ export const StackedCards = ({
         })}
       </div>
       {isHovered && (
-        <p className="flex justify-center items-center gap-5 text-primary">
-          SCROLL {<FaArrowRight />}
+        <p className={`flex justify-center items-center gap-5 text-primary`}>
+          Scroll {<FaArrowRight />}
         </p>
       )}
     </div>
