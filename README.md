@@ -1,19 +1,16 @@
-PROJECT:
+--Personal Portfolio Project--
 
-Personal Web development portfolio that acts as one central location for all key information about my career as an FE developer thats now moving in to the full stack space.
+Welcome to my personal portfolio project repository!
 
-QUICK START:
+This project is a full-stack application designed to showcase my development skills, clean code principles, and scalable design patterns. While certain aspects of the codebase may appear overengineered for a site of this size, this is intentional. My goal was to highlight reusability, modularity, and dynamic capabilities that align with best practices for larger, production-grade applications. As well as further convey the skills I offer as a developer in both the front and back end of projects.
 
-- npm install
-- npm run dev
+--Getting Started--
 
-PERSONAL PORTFOLIO PROJECT THEORY:
+*Frontend*
+Navigate to the frontend directory: cd client
 
-While this project is small to medium in size, I designed the folder structure to show how I would approach scalability for potentially larger codebases. The abstractions demonstrate how I’d handle a growing feature set and maintain clear separation of concerns.
+Start the development server: npm run start
 
-In professional projects, I’ve found that modular structures help with maintainability, scalabilty and readability, especially when the team size or feature scope increases. I applied this structure throughout the project to mimic that approach.
-
-I understand this level of abstraction isn't strictly necessary for a portfolio project of this size. However, I wanted to use this as an opportunity to showcase my understanding of scalable structures and leave room for potential growth as my skills and abilities are forever changing and adapting.
-
-TO DO:
-Using node.js build a backend that can handle form submissions from my portfolio's frontend, enabling me to store, process, and manage the data efficiently.
+*Backend*
+Navigate to the backend directory: cd server
+Start the backend server: npm run start
