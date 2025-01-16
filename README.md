@@ -7,10 +7,17 @@ This project is a full-stack application designed to showcase my development ski
 --Getting Started--
 
 *Frontend*
-Navigate to the frontend directory: cd client
+Create .env file with the following variables:
+- VITE_BASE_API_URL=http://localhost:3000
 
+Navigate to the frontend directory: cd client
 Start the development server: npm run start
 
 *Backend*
+Create .env file with the following variables:
+- PORT=3000
+- BASE_URL=http://localhost:3000
+- CLIENT_URL=http://localhost:5173
+
 Navigate to the backend directory: cd server
 Start the backend server: npm run start
