@@ -22,7 +22,7 @@ const aboutContent = {
         },
         {
           yearsServed: "2022 - 2023",
-          id: "Made by Sauce",
+          id: "Made By Sauce",
           jobTitle: "FRONTEND DEVELOPER",
           content:
             "Contributed to internal apps for B2B clients and numerous “quote and buy” SPAs for B2C clients, including Arnold Clark, DARWIN, Howdens, Triumph, Ducati, and Adrian Flux, using React, Vue.js, October CMS and TypeScript.",
@@ -33,6 +33,13 @@ const aboutContent = {
           jobTitle: "JUNIOR REACT AND JAVASCRIPT DEVELOPER",
           content:
             "Developed a variation of event and sign-up sites for a small London-based agency specialising in the automotive industry using react and plain JavaScript. As well as assisting with implementing JavaScript on WordPress sites by building and customising plugins.",
+        },
+        {
+          yearsServed: "2013 - 2021",
+          id: "Goodwin International",
+          jobTitle: "CNC PROGRAMMER/OPERATOR",
+          content:
+            "Qualified as a mechanical engineer in the nuclear sector, programming machines using languages such as FANUC and TOSNUC. Working on components for submarines and aircrafts for Rolls-Royce. Regularly used CAD/CAM software to support all stages of production.",
         },
       ],
     },

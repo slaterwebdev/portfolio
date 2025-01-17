@@ -4,6 +4,7 @@ import { PageContent } from "@/utils/types";
 const pageContent: PageContent[] = [
   {
     id: "b2c",
+    contentStyles: "sm:text-2xl",
     children: (content, items) => (
       <>
         <p>{content}</p>
@@ -13,6 +14,7 @@ const pageContent: PageContent[] = [
   },
   {
     id: "b2b",
+    contentStyles: "sm:text-2xl",
     children: (content, items) => (
       <>
         <p>{content}</p>

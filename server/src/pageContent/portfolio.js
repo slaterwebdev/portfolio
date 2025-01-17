@@ -17,7 +17,7 @@ const portfolioContent = {
       title: "B2B Frontend Internal Apps",
       items: portfolioImages.b2b,
       content:
-        "Previously, I developed internal apps for clients that provided critical business solutions, such as a client portal for Howden Insurance. Privacy restrictions mean these projects cannot be publicly displayed; nonetheless, they have been instrumental in streamlining workflows and supporting essential client operations. At Victorian Plumbing, I contributed to the development of internal tools that improved operational efficiency, some of which directly supported the codebase for the customer-facing site. Many others were developed to address specific business challenges within Victorian Plumbing, the links featured in the Help Centre highlight areas where these apps effectively resolved issues.",
+        "Previously, developed internal business solutions apps, such as a client portal for Howden Insurance. Privacy restrictions mean these projects cannot be publicly displayed. However they have been instrumental in streamlining workflows and supporting essential client operations. At Victorian Plumbing, I contributed to the development of internal tools that improved operational efficiency, some of which directly supported the codebase for the customer-facing site. Many others were developed to address specific business challenges within Victorian Plumbing, the links featured in the Help Centre highlight where these apps effectively resolved issues.",
     },
     employers: {
       title: "Previous Employers",
